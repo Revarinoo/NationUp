@@ -21,6 +21,8 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
+    
+    
 }
 
 extension HomeViewController: UICollectionViewDataSource {

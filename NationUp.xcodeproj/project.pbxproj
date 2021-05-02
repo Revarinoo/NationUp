@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F743DEB3263E58D900478F9A /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F743DEB1263E58D900478F9A /* ImageTableViewCell.swift */; };
+		F743DEB4263E58D900478F9A /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F743DEB2263E58D900478F9A /* ImageTableViewCell.xib */; };
+		F743DEB7263E89D900478F9A /* ClothesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F743DEB5263E89D900478F9A /* ClothesTableViewCell.swift */; };
+		F743DEB8263E89D900478F9A /* ClothesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F743DEB6263E89D900478F9A /* ClothesTableViewCell.xib */; };
+		F743DEBA263E915A00478F9A /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F743DEB9263E915A00478F9A /* Clothes.swift */; };
+		F743DEBE263EE2FE00478F9A /* kicirkicir.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F743DEBD263EE2FE00478F9A /* kicirkicir.mp3 */; };
+		F743DEC0263EE3C500478F9A /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F743DEBF263EE3C500478F9A /* MusicPlayer.swift */; };
 		F77F8436263A99E200F7833A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F8435263A99E200F7833A /* AppDelegate.swift */; };
 		F77F8438263A99E200F7833A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F8437263A99E200F7833A /* SceneDelegate.swift */; };
 		F77F843A263A99E200F7833A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F8439263A99E200F7833A /* HomeViewController.swift */; };
@@ -18,10 +25,24 @@
 		F77F8457263ADE2200F7833A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F8456263ADE2200F7833A /* City.swift */; };
 		F77F845C263AE6A600F7833A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F845B263AE6A600F7833A /* UIView+Extension.swift */; };
 		F77F845F263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F77F845E263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf */; };
-		F7959C61263B109B008F1D3F /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7959C60263B109B008F1D3F /* CityViewController.swift */; };
+		F78CB81C263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F78CB81B263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf */; };
+		F7ABC8DD263DBAED0021D7A7 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8DB263DBAED0021D7A7 /* CollectionTableViewCell.swift */; };
+		F7ABC8DE263DBAED0021D7A7 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7ABC8DC263DBAED0021D7A7 /* CollectionTableViewCell.xib */; };
+		F7ABC8E2263DBB3D0021D7A7 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8E0263DBB3D0021D7A7 /* CityCollectionViewCell.swift */; };
+		F7ABC8E3263DBB3D0021D7A7 /* CityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7ABC8E1263DBB3D0021D7A7 /* CityCollectionViewCell.xib */; };
+		F7ABC8E5263DBC5A0021D7A7 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8E4263DBC5A0021D7A7 /* CityDetailViewController.swift */; };
+		F7ABC8E9263DCA9E0021D7A7 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8E8263DCA9E0021D7A7 /* Food.swift */; };
+		F7ABC8EB263DCB160021D7A7 /* Characteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8EA263DCB160021D7A7 /* Characteristic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F743DEB1263E58D900478F9A /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		F743DEB2263E58D900478F9A /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		F743DEB5263E89D900478F9A /* ClothesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesTableViewCell.swift; sourceTree = "<group>"; };
+		F743DEB6263E89D900478F9A /* ClothesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClothesTableViewCell.xib; sourceTree = "<group>"; };
+		F743DEB9263E915A00478F9A /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
+		F743DEBD263EE2FE00478F9A /* kicirkicir.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kicirkicir.mp3; sourceTree = "<group>"; };
+		F743DEBF263EE3C500478F9A /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		F77F8432263A99E200F7833A /* NationUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77F8435263A99E200F7833A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F77F8437263A99E200F7833A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +55,15 @@
 		F77F8453263ADCB500F7833A /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
 		F77F8456263ADE2200F7833A /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		F77F845B263AE6A600F7833A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		F77F845E263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-SFProDisplay-Bold.ttf"; path = "../FontsFree-Net-SFProDisplay-Bold.ttf"; sourceTree = SOURCE_ROOT; };
-		F7959C60263B109B008F1D3F /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		F77F845E263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-SFProDisplay-Bold.ttf"; path = "NationUp/Resources/Fonts/FontsFree-Net-SFProDisplay-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		F78CB81B263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-SFProDisplay-Semibold.ttf"; path = "NationUp/Resources/Fonts/FontsFree-Net-SFProDisplay-Semibold.ttf"; sourceTree = SOURCE_ROOT; };
+		F7ABC8DB263DBAED0021D7A7 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		F7ABC8DC263DBAED0021D7A7 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		F7ABC8E0263DBB3D0021D7A7 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7ABC8E1263DBB3D0021D7A7 /* CityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCollectionViewCell.xib; sourceTree = "<group>"; };
+		F7ABC8E4263DBC5A0021D7A7 /* CityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
+		F7ABC8E8263DCA9E0021D7A7 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		F7ABC8EA263DCB160021D7A7 /* Characteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characteristic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +140,7 @@
 		F77F844C263AA01A00F7833A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				F743DEBD263EE2FE00478F9A /* kicirkicir.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -137,6 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				F77F8456263ADE2200F7833A /* City.swift */,
+				F7ABC8E8263DCA9E0021D7A7 /* Food.swift */,
+				F7ABC8EA263DCB160021D7A7 /* Characteristic.swift */,
+				F743DEB9263E915A00478F9A /* Clothes.swift */,
 			);
 			path = DummyData;
 			sourceTree = "<group>";
@@ -153,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				F77F845E263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf */,
+				F78CB81B263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -160,9 +193,34 @@
 		F7959C62263B10B5008F1D3F /* City */ = {
 			isa = PBXGroup;
 			children = (
-				F7959C60263B109B008F1D3F /* CityViewController.swift */,
+				F7ABC8DF263DBB210021D7A7 /* Collection Cell */,
+				F7ABC8DA263DBAC50021D7A7 /* Table Cell */,
+				F7ABC8E4263DBC5A0021D7A7 /* CityDetailViewController.swift */,
+				F743DEBF263EE3C500478F9A /* MusicPlayer.swift */,
 			);
 			path = City;
+			sourceTree = "<group>";
+		};
+		F7ABC8DA263DBAC50021D7A7 /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F7ABC8DB263DBAED0021D7A7 /* CollectionTableViewCell.swift */,
+				F7ABC8DC263DBAED0021D7A7 /* CollectionTableViewCell.xib */,
+				F743DEB1263E58D900478F9A /* ImageTableViewCell.swift */,
+				F743DEB2263E58D900478F9A /* ImageTableViewCell.xib */,
+				F743DEB5263E89D900478F9A /* ClothesTableViewCell.swift */,
+				F743DEB6263E89D900478F9A /* ClothesTableViewCell.xib */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		F7ABC8DF263DBB210021D7A7 /* Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F7ABC8E0263DBB3D0021D7A7 /* CityCollectionViewCell.swift */,
+				F7ABC8E1263DBB3D0021D7A7 /* CityCollectionViewCell.xib */,
+			);
+			path = "Collection Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,8 +280,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F743DEB4263E58D900478F9A /* ImageTableViewCell.xib in Resources */,
+				F7ABC8DE263DBAED0021D7A7 /* CollectionTableViewCell.xib in Resources */,
+				F78CB81C263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf in Resources */,
 				F77F8442263A99E400F7833A /* LaunchScreen.storyboard in Resources */,
+				F7ABC8E3263DBB3D0021D7A7 /* CityCollectionViewCell.xib in Resources */,
 				F77F844E263AA0EB00F7833A /* Colors.xcassets in Resources */,
+				F743DEB8263E89D900478F9A /* ClothesTableViewCell.xib in Resources */,
+				F743DEBE263EE2FE00478F9A /* kicirkicir.mp3 in Resources */,
 				F77F843F263A99E400F7833A /* Assets.xcassets in Resources */,
 				F77F845F263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf in Resources */,
 				F77F843D263A99E200F7833A /* Main.storyboard in Resources */,
@@ -241,9 +305,17 @@
 				F77F8454263ADCB500F7833A /* HomeCollectionCell.swift in Sources */,
 				F77F8457263ADE2200F7833A /* City.swift in Sources */,
 				F77F843A263A99E200F7833A /* HomeViewController.swift in Sources */,
+				F7ABC8E5263DBC5A0021D7A7 /* CityDetailViewController.swift in Sources */,
+				F7ABC8E2263DBB3D0021D7A7 /* CityCollectionViewCell.swift in Sources */,
 				F77F8436263A99E200F7833A /* AppDelegate.swift in Sources */,
+				F743DEBA263E915A00478F9A /* Clothes.swift in Sources */,
+				F743DEC0263EE3C500478F9A /* MusicPlayer.swift in Sources */,
+				F7ABC8E9263DCA9E0021D7A7 /* Food.swift in Sources */,
+				F7ABC8DD263DBAED0021D7A7 /* CollectionTableViewCell.swift in Sources */,
 				F77F8438263A99E200F7833A /* SceneDelegate.swift in Sources */,
-				F7959C61263B109B008F1D3F /* CityViewController.swift in Sources */,
+				F743DEB7263E89D900478F9A /* ClothesTableViewCell.swift in Sources */,
+				F743DEB3263E58D900478F9A /* ImageTableViewCell.swift in Sources */,
+				F7ABC8EB263DCB160021D7A7 /* Characteristic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
