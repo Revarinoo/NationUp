@@ -142,15 +142,17 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="VVJ-3I-Y15">
                             <color key="tintColor" name="dark_liver_horses"/>
                             <connections>
-                                <action selector="backToPrevious:" destination="dua-vn-G8k" id="2oG-Re-laX"/>
+                                <segue destination="V63-iD-Eqv" kind="unwind" unwindAction="unwindToHome:" id="3mh-eX-hCk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="GMA-Z4-Fes" id="fpM-aH-csW"/>
+                        <segue destination="V63-iD-Eqv" kind="unwind" unwindAction="unwindToHome:" id="sXB-ht-gjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3R-FU-k1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="V63-iD-Eqv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1975" y="105"/>
         </scene>

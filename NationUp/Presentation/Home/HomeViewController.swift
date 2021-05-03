@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var homeView: UICollectionView!
+    var currentIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,9 @@ class HomeViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    
+    @IBAction func unwindToHome( _ segue: UIStoryboardSegue) {
+        MusicPlayer.shared.pauseMusic()
+    }
 }
 
 extension HomeViewController: UICollectionViewDataSource {
@@ -51,7 +54,14 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        currentIndex = indexPath.row
         self.performSegue(withIdentifier: "CityDetail", sender: self)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destVC = segue.destination as? CityDetailViewController {
+            destVC.data = cities[currentIndex]
+        }
     }
 }

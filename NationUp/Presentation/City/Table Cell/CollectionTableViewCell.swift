@@ -16,6 +16,7 @@ class CollectionTableViewCell: UITableViewCell {
 
     static let identifier = "CollectionTableViewCell"
     var category: Category?
+    var data: City?
     
     
     static func nib() -> UINib {
@@ -47,9 +48,10 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let food = data?.food, let characteristic = data?.characteristic else { return 1 }
         switch category {
-            case .Food: return getFoods().count
-            case .Characteristic: return getCharacteristics().count
+            case .Food: return food.count
+            case .Characteristic: return characteristic.count
             default: return 1
         }
     }
@@ -58,13 +60,14 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CityCollectionViewCell.identifier, for: indexPath) as? CityCollectionViewCell else {
             return UICollectionViewCell()
         }
+        guard let food = data?.food, let characteristic = data?.characteristic else {return cell}
         switch category {
         case .Food:
             subTitle.text = "Traditional Foods"
-            cell.setUpFood(with: getFoods()[indexPath.row])
+            cell.setUpFood(with: food[indexPath.row])
         case .Characteristic:
             subTitle.text = "Characteristics"
-            cell.setUpCharacter(with: getCharacteristics()[indexPath.row])
+            cell.setUpCharacter(with: characteristic[indexPath.row])
         default:
             return cell
         }

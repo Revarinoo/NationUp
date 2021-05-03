@@ -13,11 +13,31 @@ struct Characteristic {
     var description: String?
 }
 
-let characteristics: [Characteristic] = [
+let jakartaChar: [Characteristic] = [
     Characteristic(image: "ondelondel", name: "Ondel-ondel", description: "Lorem ipsum sir dolor amet"),
     Characteristic(image: "silat", name: "Pencak Silat", description: "Lorem ipsum sir dolor amet")
 ]
 
+let bandungChar: [Characteristic] = [
+    Characteristic(image: "angklung", name: "Angklung", description: "Lorem ipsum sir dolor amet")
+]
+
+let semarangChar: [Characteristic] = [
+    Characteristic(image: "angklung", name: "Angklung", description: "Lorem ipsum sir dolor amet")
+]
+
+let bogorChar: [Characteristic] = [
+    Characteristic(image: "angklung", name: "Angklung", description: "Lorem ipsum sir dolor amet")
+]
+
+let jogjaChar: [Characteristic] = [
+    Characteristic(image: "angklung", name: "Angklung", description: "Lorem ipsum sir dolor amet")
+]
+
+let malangChar: [Characteristic] = [
+    Characteristic(image: "angklung", name: "Angklung", description: "Lorem ipsum sir dolor amet")
+]
+
 func getCharacteristics() -> [Characteristic] {
-    return characteristics
+    return jakartaChar
 }

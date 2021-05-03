@@ -26,6 +26,7 @@
 		F77F845C263AE6A600F7833A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F845B263AE6A600F7833A /* UIView+Extension.swift */; };
 		F77F845F263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F77F845E263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf */; };
 		F78CB81C263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F78CB81B263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf */; };
+		F79AAB0B264001FB00C16AC2 /* bubuybulan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F79AAB0A264001FB00C16AC2 /* bubuybulan.mp3 */; };
 		F7ABC8DD263DBAED0021D7A7 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8DB263DBAED0021D7A7 /* CollectionTableViewCell.swift */; };
 		F7ABC8DE263DBAED0021D7A7 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7ABC8DC263DBAED0021D7A7 /* CollectionTableViewCell.xib */; };
 		F7ABC8E2263DBB3D0021D7A7 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8E0263DBB3D0021D7A7 /* CityCollectionViewCell.swift */; };
@@ -33,6 +34,10 @@
 		F7ABC8E5263DBC5A0021D7A7 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8E4263DBC5A0021D7A7 /* CityDetailViewController.swift */; };
 		F7ABC8E9263DCA9E0021D7A7 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8E8263DCA9E0021D7A7 /* Food.swift */; };
 		F7ABC8EB263DCB160021D7A7 /* Characteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC8EA263DCB160021D7A7 /* Characteristic.swift */; };
+		F7BA9A30263FC3CE001D7439 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA9A2E263FC3CE001D7439 /* ImageCollectionViewCell.swift */; };
+		F7BA9A31263FC3CE001D7439 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BA9A2F263FC3CE001D7439 /* ImageCollectionViewCell.xib */; };
+		F7BA9A34263FC4A4001D7439 /* ImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA9A32263FC4A4001D7439 /* ImagesTableViewCell.swift */; };
+		F7BA9A35263FC4A4001D7439 /* ImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BA9A33263FC4A4001D7439 /* ImagesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +62,7 @@
 		F77F845B263AE6A600F7833A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F77F845E263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-SFProDisplay-Bold.ttf"; path = "NationUp/Resources/Fonts/FontsFree-Net-SFProDisplay-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		F78CB81B263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-SFProDisplay-Semibold.ttf"; path = "NationUp/Resources/Fonts/FontsFree-Net-SFProDisplay-Semibold.ttf"; sourceTree = SOURCE_ROOT; };
+		F79AAB0A264001FB00C16AC2 /* bubuybulan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubuybulan.mp3; sourceTree = "<group>"; };
 		F7ABC8DB263DBAED0021D7A7 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		F7ABC8DC263DBAED0021D7A7 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		F7ABC8E0263DBB3D0021D7A7 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -64,6 +70,10 @@
 		F7ABC8E4263DBC5A0021D7A7 /* CityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
 		F7ABC8E8263DCA9E0021D7A7 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		F7ABC8EA263DCB160021D7A7 /* Characteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characteristic.swift; sourceTree = "<group>"; };
+		F7BA9A2E263FC3CE001D7439 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7BA9A2F263FC3CE001D7439 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		F7BA9A32263FC4A4001D7439 /* ImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableViewCell.swift; sourceTree = "<group>"; };
+		F7BA9A33263FC4A4001D7439 /* ImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,7 @@
 		F77F844C263AA01A00F7833A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				F79AAB0A264001FB00C16AC2 /* bubuybulan.mp3 */,
 				F743DEBD263EE2FE00478F9A /* kicirkicir.mp3 */,
 			);
 			path = Sounds;
@@ -210,6 +221,8 @@
 				F743DEB2263E58D900478F9A /* ImageTableViewCell.xib */,
 				F743DEB5263E89D900478F9A /* ClothesTableViewCell.swift */,
 				F743DEB6263E89D900478F9A /* ClothesTableViewCell.xib */,
+				F7BA9A32263FC4A4001D7439 /* ImagesTableViewCell.swift */,
+				F7BA9A33263FC4A4001D7439 /* ImagesTableViewCell.xib */,
 			);
 			path = "Table Cell";
 			sourceTree = "<group>";
@@ -219,6 +232,8 @@
 			children = (
 				F7ABC8E0263DBB3D0021D7A7 /* CityCollectionViewCell.swift */,
 				F7ABC8E1263DBB3D0021D7A7 /* CityCollectionViewCell.xib */,
+				F7BA9A2E263FC3CE001D7439 /* ImageCollectionViewCell.swift */,
+				F7BA9A2F263FC3CE001D7439 /* ImageCollectionViewCell.xib */,
 			);
 			path = "Collection Cell";
 			sourceTree = "<group>";
@@ -283,6 +298,7 @@
 				F743DEB4263E58D900478F9A /* ImageTableViewCell.xib in Resources */,
 				F7ABC8DE263DBAED0021D7A7 /* CollectionTableViewCell.xib in Resources */,
 				F78CB81C263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf in Resources */,
+				F79AAB0B264001FB00C16AC2 /* bubuybulan.mp3 in Resources */,
 				F77F8442263A99E400F7833A /* LaunchScreen.storyboard in Resources */,
 				F7ABC8E3263DBB3D0021D7A7 /* CityCollectionViewCell.xib in Resources */,
 				F77F844E263AA0EB00F7833A /* Colors.xcassets in Resources */,
@@ -290,6 +306,8 @@
 				F743DEBE263EE2FE00478F9A /* kicirkicir.mp3 in Resources */,
 				F77F843F263A99E400F7833A /* Assets.xcassets in Resources */,
 				F77F845F263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf in Resources */,
+				F7BA9A31263FC3CE001D7439 /* ImageCollectionViewCell.xib in Resources */,
+				F7BA9A35263FC4A4001D7439 /* ImagesTableViewCell.xib in Resources */,
 				F77F843D263A99E200F7833A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +321,7 @@
 			files = (
 				F77F845C263AE6A600F7833A /* UIView+Extension.swift in Sources */,
 				F77F8454263ADCB500F7833A /* HomeCollectionCell.swift in Sources */,
+				F7BA9A30263FC3CE001D7439 /* ImageCollectionViewCell.swift in Sources */,
 				F77F8457263ADE2200F7833A /* City.swift in Sources */,
 				F77F843A263A99E200F7833A /* HomeViewController.swift in Sources */,
 				F7ABC8E5263DBC5A0021D7A7 /* CityDetailViewController.swift in Sources */,
@@ -314,6 +333,7 @@
 				F7ABC8DD263DBAED0021D7A7 /* CollectionTableViewCell.swift in Sources */,
 				F77F8438263A99E200F7833A /* SceneDelegate.swift in Sources */,
 				F743DEB7263E89D900478F9A /* ClothesTableViewCell.swift in Sources */,
+				F7BA9A34263FC4A4001D7439 /* ImagesTableViewCell.swift in Sources */,
 				F743DEB3263E58D900478F9A /* ImageTableViewCell.swift in Sources */,
 				F7ABC8EB263DCB160021D7A7 /* Characteristic.swift in Sources */,
 			);

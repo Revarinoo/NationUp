@@ -12,10 +12,9 @@ struct Clothes {
     var image: String?
 }
 
-let data: [Clothes] = [
-    Clothes(name: "Sadariah", image: "sadariah")
-]
+let jakartaCloth: Clothes = Clothes(name: "Sadariah", image: "sadariah")
+let bandungCloth: Clothes = Clothes(name: "Kebaya Sunda", image: "bajubandung")
 
-func getClothes() -> [Clothes] {
-    return data
+func getClothes() -> Clothes {
+    return jakartaCloth
 }

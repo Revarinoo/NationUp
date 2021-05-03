@@ -15,7 +15,7 @@ class HomeCollectionCell: UICollectionViewCell {
     static let identifier = "HomeCollectionCell"
     
     func setup(with city: City) {
-        cityImage.image = UIImage(named: city.image)
+        cityImage.image = UIImage(named: city.image[0])
         cityName.text = city.name
     }
 }

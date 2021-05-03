@@ -13,14 +13,17 @@ class CityDetailViewController: UIViewController {
 
     var play = UIBarButtonItem()
     var pause = UIBarButtonItem()
+    var data: City?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableView()
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.barTintColor = UIColor(named: "orange-bg")
-        MusicPlayer.shared.startMusic(audio: "kicirkicir")
+        guard let musicName = data?.music else {return}
+        MusicPlayer.shared.startMusic(audio: musicName)
         setRightBarItem()
+        navigationItem.title = data?.image[0]
     }
     
     func setRightBarItem() {
@@ -40,9 +43,6 @@ class CityDetailViewController: UIViewController {
         MusicPlayer.shared.pauseMusic()
     }
     
-    @IBAction func backToPrevious(_ sender: UIBarButtonItem) {
-        MusicPlayer.shared.pauseMusic()
-    }
     
     func setUpTableView() {
         tableView.register(CollectionTableViewCell.nib(), forCellReuseIdentifier: CollectionTableViewCell.identifier)
@@ -73,18 +73,21 @@ extension CityDetailViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.category = .Food
+            cell.data = data
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as? CollectionTableViewCell else {
                 return UITableViewCell()
             }
             cell.category = .Characteristic
+            cell.data = data
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ClothesTableViewCell.identifier, for: indexPath) as? ClothesTableViewCell else {
                 return UITableViewCell()
             }
-            cell.setUp(name: getClothes()[0].name!, img: getClothes()[0].image!)
+            guard let name = data?.clothes.name, let image = data?.clothes.image else { return cell}
+            cell.setUp(name: name, img: image)
             return cell
         default:
             break
