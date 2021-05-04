@@ -26,6 +26,7 @@ class CollectionTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var subTitle: UILabel!
+    weak var delegate: CityDetailDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -84,5 +85,10 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 22
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let city = data else {return}
+        delegate?.getClicked(data: city)
     }
 }

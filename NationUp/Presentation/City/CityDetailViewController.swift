@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CityDetailDelegate: class {
+    func getClicked(data: City)
+}
+
 class CityDetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -84,7 +88,7 @@ extension CityDetailViewController: UITableViewDelegate, UITableViewDataSource {
         case 3: cell.category = .Cloth
         default: break
         }
-        
+        cell.delegate = self
         cell.data = data
         return cell
     }
@@ -102,5 +106,11 @@ extension CityDetailViewController: UITableViewDelegate, UITableViewDataSource {
             let radius = cell.contentView.layer.cornerRadius
             cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
         }
+    }
+}
+
+extension CityDetailViewController: CityDetailDelegate {
+    func getClicked(data: City) {
+        self.performSegue(withIdentifier: "toDetail", sender: self)
     }
 }

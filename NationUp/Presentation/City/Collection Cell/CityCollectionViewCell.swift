@@ -55,5 +55,4 @@ class CityCollectionViewCell: UICollectionViewCell {
         lblName.text = model.name
         imgView.image = UIImage(named: model.image ?? "")
     }
-
 }

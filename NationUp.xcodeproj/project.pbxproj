@@ -11,6 +11,7 @@
 		F70D487F2640DB86002B7567 /* ImageSliderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70D487D2640DB86002B7567 /* ImageSliderTableCell.xib */; };
 		F70D48822640E130002B7567 /* ImageSliderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D48802640E130002B7567 /* ImageSliderCollectionCell.swift */; };
 		F70D48832640E130002B7567 /* ImageSliderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70D48812640E130002B7567 /* ImageSliderCollectionCell.xib */; };
+		F73B4FBF2641B2610040F828 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B4FBE2641B2610040F828 /* DetailViewController.swift */; };
 		F743DEB7263E89D900478F9A /* ClothesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F743DEB5263E89D900478F9A /* ClothesTableViewCell.swift */; };
 		F743DEB8263E89D900478F9A /* ClothesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F743DEB6263E89D900478F9A /* ClothesTableViewCell.xib */; };
 		F743DEBA263E915A00478F9A /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F743DEB9263E915A00478F9A /* Clothes.swift */; };
@@ -43,6 +44,7 @@
 		F70D487D2640DB86002B7567 /* ImageSliderTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSliderTableCell.xib; sourceTree = "<group>"; };
 		F70D48802640E130002B7567 /* ImageSliderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderCollectionCell.swift; sourceTree = "<group>"; };
 		F70D48812640E130002B7567 /* ImageSliderCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSliderCollectionCell.xib; sourceTree = "<group>"; };
+		F73B4FBE2641B2610040F828 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F743DEB5263E89D900478F9A /* ClothesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesTableViewCell.swift; sourceTree = "<group>"; };
 		F743DEB6263E89D900478F9A /* ClothesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClothesTableViewCell.xib; sourceTree = "<group>"; };
 		F743DEB9263E915A00478F9A /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F73B4FBD2641B2130040F828 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F73B4FBE2641B2610040F828 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		F77F8429263A99E200F7833A = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 		F77F844A263A9FAC00F7833A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F73B4FBD2641B2130040F828 /* Detail */,
 				F7959C62263B10B5008F1D3F /* City */,
 				F77F8451263ADC4F00F7833A /* Home */,
 			);
@@ -313,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77F845C263AE6A600F7833A /* UIView+Extension.swift in Sources */,
+				F73B4FBF2641B2610040F828 /* DetailViewController.swift in Sources */,
 				F77F8454263ADCB500F7833A /* HomeCollectionCell.swift in Sources */,
 				F77F8457263ADE2200F7833A /* City.swift in Sources */,
 				F77F843A263A99E200F7833A /* HomeViewController.swift in Sources */,
