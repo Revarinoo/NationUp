@@ -22,7 +22,7 @@ class ClothesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         imgView.contentMode = .scaleAspectFill
         imgView.clipsToBounds = true
-        imgView.layer.cornerRadius = 20
+        imgView.layer.cornerRadius = 10
         imgView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     }
 

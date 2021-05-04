@@ -1,0 +1,57 @@
+{
+  "buildCommand" : "prepareForIndexing",
+  "configuredTargets" : [
+    {
+      "guid" : "9a1405dc1a6e53e0a2d6de12892a2460552998a6461a574e863553f4cc53470a"
+    }
+  ],
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator14.5",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/revarino/Documents/Nano Challenge 1/NationUp/DerivedData/NationUp/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/revarino/Documents/Nano Challenge 1/NationUp/DerivedData/NationUp/Build/Products",
+      "derivedDataPath" : "/Users/revarino/Documents/Nano Challenge 1/NationUp/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/revarino/Documents/Nano Challenge 1/NationUp/DerivedData/NationUp/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/revarino/Documents/Nano Challenge 1/NationUp/DerivedData/NationUp/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/revarino/Documents/Nano Challenge 1/NationUp/DerivedData/NationUp/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone13,2",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "14.5",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "08810F73-3546-42A5-9002-C955C5FBC46E",
+          "TARGET_DEVICE_MODEL" : "iPhone13,2",
+          "TARGET_DEVICE_OS_VERSION" : "14.5",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

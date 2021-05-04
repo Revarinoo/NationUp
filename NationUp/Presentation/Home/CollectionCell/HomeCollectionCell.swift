@@ -11,6 +11,8 @@ class HomeCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var cityImage: UIImageView!
     @IBOutlet weak var cityName: UILabel!
+    @IBOutlet weak var cardView: DesignableView!
+    
     
     static let identifier = "HomeCollectionCell"
     

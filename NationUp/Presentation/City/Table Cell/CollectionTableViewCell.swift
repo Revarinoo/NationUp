@@ -10,6 +10,7 @@ import UIKit
 enum Category {
     case Food
     case Characteristic
+    case Cloth
 }
 
 class CollectionTableViewCell: UITableViewCell {
@@ -60,7 +61,7 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CityCollectionViewCell.identifier, for: indexPath) as? CityCollectionViewCell else {
             return UICollectionViewCell()
         }
-        guard let food = data?.food, let characteristic = data?.characteristic else {return cell}
+        guard let food = data?.food, let characteristic = data?.characteristic, let clothes = data?.clothes else {return cell}
         switch category {
         case .Food:
             subTitle.text = "Traditional Foods"
@@ -68,6 +69,9 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
         case .Characteristic:
             subTitle.text = "Characteristics"
             cell.setUpCharacter(with: characteristic[indexPath.row])
+        case .Cloth:
+            subTitle.text = "Traditional Clothes"
+            cell.setUpClothes(with: clothes)
         default:
             return cell
         }
@@ -75,6 +79,10 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 209, height: 245)
+        return CGSize(width: 166, height: 196)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 22
     }
 }

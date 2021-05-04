@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "f8ef4809d34953f797bc92eb43111c3f"
+build_time: [1620060889, 149549000]
+inputs:
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Resources/Helpers/UIView+Extension.swift": [1619701545, 992009765]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/Home/CollectionCell/HomeCollectionCell.swift": [1620055932, 291076779]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/City/Collection Cell/ImageCollectionViewCell.swift": [1620021052, 951328107]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Resources/DummyData/City.swift": [1620056820, 544487892]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/Home/HomeViewController.swift": [1620056296, 472170644]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/City/CityDetailViewController.swift": [1620060746, 352249410]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/City/Collection Cell/CityCollectionViewCell.swift": [1619968420, 819644170]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Application/AppDelegate.swift": [1620060880, 310951892]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Resources/DummyData/Clothes.swift": [1620056813, 71957336]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/City/MusicPlayer.swift": [1619968420, 820191040]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Resources/DummyData/Food.swift": [1620028401, 246875926]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/City/Table Cell/CollectionTableViewCell.swift": [1620056683, 810193747]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Application/SceneDelegate.swift": [1619681890, 876070544]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/City/Table Cell/ClothesTableViewCell.swift": [1619968420, 820505359]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/City/Table Cell/ImagesTableViewCell.swift": [1620060728, 328961773]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Presentation/City/Table Cell/ImageTableViewCell.swift": [1619968420, 821586423]
+  "/Users/revarino/Documents/Nano Challenge 1/NationUp/NationUp/Resources/DummyData/Characteristic.swift": [1620035521, 542653239]

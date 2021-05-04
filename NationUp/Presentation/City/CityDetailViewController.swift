@@ -18,12 +18,16 @@ class CityDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableView()
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.barTintColor = UIColor(named: "orange-bg")
+        setUpNavigationBar()
         guard let musicName = data?.music else {return}
         MusicPlayer.shared.startMusic(audio: musicName)
-        setRightBarItem()
+    }
+    
+    private func setUpNavigationBar() {
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.barTintColor = UIColor(named: "orange-bg")
         navigationItem.title = data?.image[0]
+        setRightBarItem()
     }
     
     func setRightBarItem() {
@@ -46,8 +50,8 @@ class CityDetailViewController: UIViewController {
     
     func setUpTableView() {
         tableView.register(CollectionTableViewCell.nib(), forCellReuseIdentifier: CollectionTableViewCell.identifier)
-        tableView.register(ImageTableViewCell.nib(), forCellReuseIdentifier: ImageTableViewCell.identifier)
         tableView.register(ClothesTableViewCell.nib(), forCellReuseIdentifier: ClothesTableViewCell.identifier)
+        tableView.register(ImageSliderTableCell.nib(), forCellReuseIdentifier: ImageSliderTableCell.identifier)
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -61,44 +65,42 @@ extension CityDetailViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
+        if indexPath.row == 0 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: ImageSliderTableCell.identifier, for: indexPath) as? ImageSliderTableCell else {
+                return UITableViewCell()
+            }
+            guard let images = data?.image else {return cell}
+            cell.data = images
+            cell.pageControlSetUp()
+            return cell
+        }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as? CollectionTableViewCell else {
+            return UITableViewCell()
+        }
         
         switch indexPath.row {
-        case 0:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: ImageTableViewCell.identifier, for: indexPath) as? ImageTableViewCell else {
-                return UITableViewCell()
-            }
-            cell.imgView.image = UIImage(named: "jakarta-view")
-        case 1:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as? CollectionTableViewCell else {
-                return UITableViewCell()
-            }
-            cell.category = .Food
-            cell.data = data
-            return cell
-        case 2:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as? CollectionTableViewCell else {
-                return UITableViewCell()
-            }
-            cell.category = .Characteristic
-            cell.data = data
-            return cell
-        case 3:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: ClothesTableViewCell.identifier, for: indexPath) as? ClothesTableViewCell else {
-                return UITableViewCell()
-            }
-            guard let name = data?.clothes.name, let image = data?.clothes.image else { return cell}
-            cell.setUp(name: name, img: image)
-            return cell
-        default:
-            break
+        case 1: cell.category = .Food
+        case 2: cell.category = .Characteristic
+        case 3: cell.category = .Cloth
+        default: break
         }
-        return UITableViewCell()
+        
+        cell.data = data
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 295.0
         }
-        return 320.0
+        return 280.0
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == 1 || indexPath.row == 2 {
+            cell.contentView.layer.masksToBounds = true
+            let radius = cell.contentView.layer.cornerRadius
+            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
+        }
     }
 }
