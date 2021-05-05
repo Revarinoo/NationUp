@@ -25,14 +25,16 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationController?.navigationBar.shadowImage = UIImage()
-            navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
         
         scrollView.backgroundColor = #colorLiteral(red: 1, green: 0.9144377112, blue: 0.8369845748, alpha: 1)
-        let frameHeight = imgView.frame.size.height + detailView.frame.size.height + 70
+        let frameHeight = imgView.frame.size.height + detailView.frame.size.height + 90
         scrollView.contentSize = CGSize(width: view.frame.size.width, height: frameHeight)
         
         setUp(food: food, characteristic: characteristic, cloth: cloth, location: location)
+        detailView.layer.cornerRadius = 20
+        detailView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
     }
     

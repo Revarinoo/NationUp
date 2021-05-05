@@ -16,7 +16,7 @@ struct City {
     var music: String
 }
 
-let jakartaImage: [String] = ["Jakarta","jakarta-view"]
+let jakartaImage: [String] = ["Jakarta","jakarta-view","jakarta3","jakarta4","jakarta2"]
 let bandungImage: [String] = ["Bandung","bandung1","bandung2","bandung3"]
 let semarangImage: [String] = ["Semarang","bandung1","bandung2","bandung3"]
 let jogjaImage: [String] = ["Jogja","bandung1","bandung2","bandung3"]

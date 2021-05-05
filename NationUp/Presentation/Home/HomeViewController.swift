@@ -63,4 +63,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             destVC.data = cities[currentIndex]
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+            cell.contentView.layer.masksToBounds = true
+            let radius = cell.contentView.layer.cornerRadius
+            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
+        }
 }

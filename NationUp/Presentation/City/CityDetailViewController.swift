@@ -41,7 +41,8 @@ class CityDetailViewController: UIViewController {
         self.pause = UIBarButtonItem(barButtonSystemItem: .pause, target: self, action: #selector(pausedMusic))
         self.play = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(playedMusic))
         navigationItem.rightBarButtonItem = pause
-        navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "dark-liver-horses")
+        play.tintColor = #colorLiteral(red: 0.337254902, green: 0.2588235294, blue: 0.2392156863, alpha: 1)
+        pause.tintColor = #colorLiteral(red: 0.337254902, green: 0.2588235294, blue: 0.2392156863, alpha: 1)
     }
     
     @objc func playedMusic() {
