@@ -17,6 +17,7 @@
 		F743DEBA263E915A00478F9A /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F743DEB9263E915A00478F9A /* Clothes.swift */; };
 		F743DEBE263EE2FE00478F9A /* kicirkicir.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F743DEBD263EE2FE00478F9A /* kicirkicir.mp3 */; };
 		F743DEC0263EE3C500478F9A /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F743DEBF263EE3C500478F9A /* MusicPlayer.swift */; };
+		F75A24E1264234CD009A285F /* FontsFree-Net-SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F75A24E0264234CD009A285F /* FontsFree-Net-SFProDisplay-Medium.ttf */; };
 		F77F8436263A99E200F7833A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F8435263A99E200F7833A /* AppDelegate.swift */; };
 		F77F8438263A99E200F7833A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F8437263A99E200F7833A /* SceneDelegate.swift */; };
 		F77F843A263A99E200F7833A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F8439263A99E200F7833A /* HomeViewController.swift */; };
@@ -50,6 +51,7 @@
 		F743DEB9263E915A00478F9A /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
 		F743DEBD263EE2FE00478F9A /* kicirkicir.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kicirkicir.mp3; sourceTree = "<group>"; };
 		F743DEBF263EE3C500478F9A /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		F75A24E0264234CD009A285F /* FontsFree-Net-SFProDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SFProDisplay-Medium.ttf"; sourceTree = "<group>"; };
 		F77F8432263A99E200F7833A /* NationUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77F8435263A99E200F7833A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F77F8437263A99E200F7833A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		F77F845D263B0AEE00F7833A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F75A24E0264234CD009A285F /* FontsFree-Net-SFProDisplay-Medium.ttf */,
 				F77F845E263B0B0200F7833A /* FontsFree-Net-SFProDisplay-Bold.ttf */,
 				F78CB81B263C36FA00B75BC8 /* FontsFree-Net-SFProDisplay-Semibold.ttf */,
 			);
@@ -308,6 +311,7 @@
 				F77F844E263AA0EB00F7833A /* Colors.xcassets in Resources */,
 				F70D487F2640DB86002B7567 /* ImageSliderTableCell.xib in Resources */,
 				F70D48832640E130002B7567 /* ImageSliderCollectionCell.xib in Resources */,
+				F75A24E1264234CD009A285F /* FontsFree-Net-SFProDisplay-Medium.ttf in Resources */,
 				F743DEB8263E89D900478F9A /* ClothesTableViewCell.xib in Resources */,
 				F743DEBE263EE2FE00478F9A /* kicirkicir.mp3 in Resources */,
 				F77F843F263A99E400F7833A /* Assets.xcassets in Resources */,
