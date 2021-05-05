@@ -88,7 +88,7 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let city = data else {return}
-        delegate?.getClicked(data: city)
+        guard let city = data, let category = category else {return}
+        delegate?.getClicked(data: city, category: category, index: indexPath.row)
     }
 }

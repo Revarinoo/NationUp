@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CityDetailDelegate: class {
-    func getClicked(data: City)
+    func getClicked(data: City, category: Category, index: Int)
 }
 
 class CityDetailViewController: UIViewController {
@@ -18,7 +18,10 @@ class CityDetailViewController: UIViewController {
     var play = UIBarButtonItem()
     var pause = UIBarButtonItem()
     var data: City?
-
+    var tempData: City?
+    var tempCat: Category?
+    var index: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableView()
@@ -58,6 +61,10 @@ class CityDetailViewController: UIViewController {
         tableView.register(ImageSliderTableCell.nib(), forCellReuseIdentifier: ImageSliderTableCell.identifier)
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    @IBAction func unwindToCity(_ segue: UIStoryboardSegue) {
+        
     }
     
 }
@@ -110,7 +117,29 @@ extension CityDetailViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension CityDetailViewController: CityDetailDelegate {
-    func getClicked(data: City) {
+    func getClicked(data: City, category: Category, index: Int) {
+        tempData = data
+        tempCat = category
+        self.index = index
         self.performSegue(withIdentifier: "toDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destVC = segue.destination as? DetailViewController {
+            switch tempCat {
+            case .Food:
+                guard let food = tempData?.food else {return}
+                destVC.food = food[index]
+            case .Characteristic:
+                guard let characteristic = tempData?.characteristic else { return }
+                destVC.characteristic = characteristic[index]
+            default:
+                guard let clothes = tempData?.clothes else { return }
+                destVC.cloth = clothes
+            }
+            
+            guard let location = tempData?.name else { return }
+            destVC.location = location
+        }
     }
 }

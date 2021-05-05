@@ -11,6 +11,16 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var descriptionText: UITextView!
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var detailView: UIView!
+    @IBOutlet weak var category: UILabel!
+    @IBOutlet weak var dataName: UILabel!
+    @IBOutlet weak var dataLocation: UILabel!
+    
+    var food: Food?
+    var characteristic: Characteristic?
+    var cloth: Clothes?
+    var location: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +29,46 @@ class DetailViewController: UIViewController {
             navigationController?.navigationBar.isTranslucent = true
         
         scrollView.backgroundColor = #colorLiteral(red: 1, green: 0.9144377112, blue: 0.8369845748, alpha: 1)
-        scrollView.contentSize = CGSize(width: view.frame.size.width, height: view.frame.size.height)
+        let frameHeight = imgView.frame.size.height + detailView.frame.size.height + 70
+        scrollView.contentSize = CGSize(width: view.frame.size.width, height: frameHeight)
         
-        let txt = "Kerak telor (English: Egg crust) is a Betawi traditional spicy omelette dish in Indonesian cuisine. It is made from glutinous rice cooked with egg and served with serundeng (fried shredded coconut), fried shallots  and dried shrimp as topping. \n\n Each of the portion is made by order. The kerak telor vendor puts a small amount of ketan on a small wok pan and heats it on the charcoal fire. He then adds an egg (chicken or duck, but duck eggs are considered more delicious nd some spices and mix it. The dish is fried on a wok without any cooking oil so the omelette will stick on the wok and enable to put it upside down straight against charcoal fire until it is cooked. \n\n Each of the portion is made by order. The kerak telor vendor puts a small amount of ketan on a small wok pan and heats it on the charcoal fire. He then adds an egg (chicken or duck, but duck eggs are considered more delicious nd some spices and mix it. The dish is fried on a wok without any cooking oil so the omelette will stick on the wok and enable to put it upside down straight against charcoal fire until it is cooked.".withBoldText(text: "Betawi traditional spicy omelette dish")
+        setUp(food: food, characteristic: characteristic, cloth: cloth, location: location)
+        
+    }
+    
+    @IBAction func backToPrevious(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "toCity", sender: self)
+    }
+    
+    func setUp(food: Food?, characteristic: Characteristic?, cloth: Clothes?, location: String) {
+        var txt: NSAttributedString!
+        var imgName = ""
+        var objName = ""
+        var cat = ""
+        if let foodImg = food?.image, let foodDesc = food?.description, let foodName = food?.name  {
+            imgName = foodImg
+            objName = foodName
+            cat = "Food"
+            txt = foodDesc.withBoldText(text: "")
+        }
+        
+        else if let charImg = characteristic?.image, let charDesc = characteristic?.description, let charName = characteristic?.name {
+            imgName = charImg
+            objName = charName
+            cat = "Characteristic"
+            txt = charDesc.withBoldText(text: "")
+        }
+        else if let clothImg = cloth?.image, let clothName = cloth?.name, let clothDesc = cloth?.desc {
+            imgName = clothImg
+            objName = clothName
+            cat = "Clothes"
+            txt = clothDesc.withBoldText(text: "")
+        }
+        print(imgName)
+        imgView.image = UIImage(named: imgName)
+        dataName.text = objName + ","
+        dataLocation.text = location
+        category.text = cat
         descriptionText.attributedText = txt
         descriptionText.textColor = #colorLiteral(red: 0.4705882353, green: 0.2509803922, blue: 0.1960784314, alpha: 1)
         descriptionText.translatesAutoresizingMaskIntoConstraints = true

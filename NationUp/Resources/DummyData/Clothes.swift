@@ -10,10 +10,11 @@ import Foundation
 struct Clothes {
     var name: String?
     var image: String?
+    var desc: String?
 }
 
-let jakartaCloth: Clothes = Clothes(name: "Sadariah", image: "sadariah")
-let bandungCloth: Clothes = Clothes(name: "Kebaya Sunda", image: "bajubandung")
+let jakartaCloth: Clothes = Clothes(name: "Sadariah", image: "sadariah",desc: "Lorem ipsum sir dolor amet")
+let bandungCloth: Clothes = Clothes(name: "Kebaya Sunda", image: "bajubandung",desc: "Lorem ipsum sir dolor amet")
 
 func getClothes() -> Clothes {
     return jakartaCloth
