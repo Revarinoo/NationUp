@@ -35,8 +35,8 @@ class ImageSliderTableCell: UITableViewCell {
         pageControl.numberOfPages = total-1
         pageControl.currentPage = 0
         
-        DispatchQueue.main.async {
-            self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+        DispatchQueue.main.async { [weak self] in
+            self!.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self!.changeImage), userInfo: nil, repeats: true)
         }
     }
     
